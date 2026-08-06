@@ -36,13 +36,26 @@ def buscar_projetos_github():
 def buscar_projetos_kaggle():
     print("Buscando notebooks do Kaggle...")
     usuario_kaggle = os.getenv("KAGGLE_USERNAME")
-    projetos = []
+    chave_kaggle = os.getenv("KAGGLE_KEY")
     
-    try:
-        api = KaggleApi()
-        api.authenticate() # Usa as variáveis KAGGLE_USERNAME e KAGGLE_KEY automaticamente
+    if not usuario_kaggle or not chave_kaggle:
+        print("🚨 ERRO: As credenciais do Kaggle não foram injetadas no GitHub Actions.")
+        return []
         
+    projetos = []
+    try:
+        # Injeta as chaves explicitamente no ambiente do sistema operacional
+        os.environ['KAGGLE_USERNAME'] = usuario_kaggle
+        os.environ['KAGGLE_KEY'] = chave_kaggle
+        
+        # Só inicializa a API após forçar as variáveis no ambiente
+        from kaggle.api.kaggle_api_extended import KaggleApi
+        api = KaggleApi()
+        api.authenticate()
+        
+        print(f"✅ Autenticação bem-sucedida! Buscando projetos para: {usuario_kaggle}")
         kernels = api.kernels_list(user=usuario_kaggle)
+        
         for kernel in kernels:
             projetos.append({
                 "id": f"kg-{kernel.ref.replace('/', '-')}",
@@ -53,8 +66,9 @@ def buscar_projetos_kaggle():
                 "tecnologias": "Python / Jupyter",
                 "atualizado_em": str(kernel.lastRunTime)
             })
+        print(f"✅ Sucesso: {len(projetos)} notebooks encontrados no Kaggle.")
     except Exception as e:
-        print(f"Erro ao buscar dados do Kaggle: {e}")
+        print(f"Erro detalhado ao acessar a API do Kaggle: {e}")
         
     return projetos
 
