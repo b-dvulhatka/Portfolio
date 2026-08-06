@@ -1,1 +1,173 @@
-[]
+[
+  {
+    "id": "gh-1324608612",
+    "titulo": "Portfolio",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/Portfolio",
+    "origem": "GitHub",
+    "tecnologias": "HTML",
+    "atualizado_em": "2026-08-06T01:49:40Z"
+  },
+  {
+    "id": "gh-903685756",
+    "titulo": "Sql_Documentation_Ai",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/sql_documentation_AI",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2026-06-13T03:26:09Z"
+  },
+  {
+    "id": "gh-1184835509",
+    "titulo": "Crm_Project",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/crm_project",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2026-06-13T00:44:00Z"
+  },
+  {
+    "id": "gh-1087571106",
+    "titulo": "Gestao_De_Financas",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/Gestao_de_financas",
+    "origem": "GitHub",
+    "tecnologias": "JavaScript",
+    "atualizado_em": "2025-11-01T07:18:14Z"
+  },
+  {
+    "id": "gh-1080810427",
+    "titulo": "Air Traffic Control",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/Air-Traffic-Control",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-10-21T22:45:20Z"
+  },
+  {
+    "id": "gh-1073604841",
+    "titulo": "Api Payment",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/API-Payment",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-10-13T09:54:47Z"
+  },
+  {
+    "id": "gh-1070355518",
+    "titulo": "Hackerrank Sql",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/hackerrank-sql",
+    "origem": "GitHub",
+    "tecnologias": "Várias",
+    "atualizado_em": "2025-10-05T18:59:14Z"
+  },
+  {
+    "id": "gh-1049216528",
+    "titulo": "Appointment_Saas_Streamlit",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/appointment_saas_streamlit",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-09-02T16:46:26Z"
+  },
+  {
+    "id": "gh-896744850",
+    "titulo": "Yt_Summarize",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/yt_summarize",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-08-27T21:29:17Z"
+  },
+  {
+    "id": "gh-894079713",
+    "titulo": "Chatbot Regulamento Cbf 2024",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/Chatbot-regulamento-CBF-2024",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-08-27T20:42:03Z"
+  },
+  {
+    "id": "gh-1042450707",
+    "titulo": "Image_Convert",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/Image_Convert",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-08-22T03:29:54Z"
+  },
+  {
+    "id": "gh-1042432357",
+    "titulo": "File_Convert",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/File_Convert",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-08-22T02:33:23Z"
+  },
+  {
+    "id": "gh-1041336882",
+    "titulo": "Streamlit",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/Streamlit",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2025-08-20T10:40:16Z"
+  },
+  {
+    "id": "gh-896254532",
+    "titulo": "Dataops",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/dataops",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2024-11-29T22:15:33Z"
+  },
+  {
+    "id": "gh-887813208",
+    "titulo": "Fakedex_App",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/fakedex_app",
+    "origem": "GitHub",
+    "tecnologias": "Python",
+    "atualizado_em": "2024-11-13T11:03:34Z"
+  },
+  {
+    "id": "gh-246029431",
+    "titulo": "Reptesteaula",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/repTesteAula",
+    "origem": "GitHub",
+    "tecnologias": "C++",
+    "atualizado_em": "2020-03-09T13:31:21Z"
+  },
+  {
+    "id": "gh-235858993",
+    "titulo": "Hackerrank Php",
+    "descricao": "soluções do hacker rank em php",
+    "url": "https://github.com/b-dvulhatka/hackerrank-php",
+    "origem": "GitHub",
+    "tecnologias": "PHP",
+    "atualizado_em": "2020-02-10T04:00:25Z"
+  },
+  {
+    "id": "gh-223212109",
+    "titulo": "Aplicativosii",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/AplicativosII",
+    "origem": "GitHub",
+    "tecnologias": "Java",
+    "atualizado_em": "2019-11-21T16:10:53Z"
+  },
+  {
+    "id": "gh-223208769",
+    "titulo": "Aplicativos Ii",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/aplicativos-II",
+    "origem": "GitHub",
+    "tecnologias": "Várias",
+    "atualizado_em": "2019-11-21T15:46:56Z"
+  }
+]
