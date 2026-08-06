@@ -57,6 +57,9 @@ def buscar_projetos_kaggle():
         kernels = api.kernels_list(user=usuario_kaggle)
         
         for kernel in kernels:
+            # Usa getattr para garantir que não vai quebrar se a biblioteca mudar o nome da variável no futuro
+            data_atualizacao = getattr(kernel, 'last_run_time', None) or getattr(kernel, 'lastRunTime', 'Data não disponível')
+            
             projetos.append({
                 "id": f"kg-{kernel.ref.replace('/', '-')}",
                 "titulo": kernel.title,
@@ -64,7 +67,7 @@ def buscar_projetos_kaggle():
                 "url": f"https://www.kaggle.com/{kernel.ref}",
                 "origem": "Kaggle",
                 "tecnologias": "Python / Jupyter",
-                "atualizado_em": str(kernel.lastRunTime)
+                "atualizado_em": str(data_atualizacao)
             })
         print(f"✅ Sucesso: {len(projetos)} notebooks encontrados no Kaggle.")
     except Exception as e:
