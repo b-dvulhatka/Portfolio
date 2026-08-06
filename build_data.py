@@ -4,7 +4,7 @@ import requests
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 # Configurações iniciais
-GITHUB_USERNAME = "SEU_USUARIO_GITHUB"
+GITHUB_USERNAME = "b-dvulhatka"
 ARQUIVO_SAIDA = "projetos.json"
 
 def buscar_projetos_github():
