@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Dados e Desenvolvimento</title>
+    <style>
+        /* Paleta de cores centralizada */
+        :root {
+            --background: #0D1117;
+            --surface: #161B22;
+            --primary: #2F81F7;
+            --secondary: #58A6FF;
+            --accent: #A371F7;
+            --text: #F0F6FC;
+            --text-secondary: #8B949E;
+            --border: #30363D;
+        }
+
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Fontes nativas do sistema para maior performance */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        /* Estrutura do Cabeçalho */
+        header {
+            max-width: 1200px;
+            margin: 0 auto 3rem auto;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Container Principal */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #loading {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        /* Grid dos Projetos */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Estilo dos Cards */
+        .card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: var(--text-secondary);
+            transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+        }
+
+        /* Tipografia dentro do Card */
+        .card h3 {
+            font-size: 1.25rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .card .descricao {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+            flex-grow: 1; /* Empurra os links para a base do card */
+        }
+
+        .card .tech-stack {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .card .date {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+        }
+
+        /* Botões/Links de Ação */
+        .card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            margin-top: auto;
+        }
+
+        .card a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+
+        /* Badges de Identificação (Kaggle/GitHub) */
+        .badge {
+            align-self: flex-start;
+            padding: 0.15rem 0.6rem;
+            border-radius: 2em;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+        }
+
+        /* Estilos específicos para as plataformas, usando a paleta */
+        .badge.github {
+            background-color: transparent;
+            color: var(--text);
+            border-color: var(--border);
+        }
+
+        .badge.kaggle {
+            background-color: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bruno Dvulhatka</h1>
+        <p>Análise de Dados, Desenvolvimento Full-Stack</p>
+    </header>
+    <main>
+        <div id="loading">Sincronizando repositórios e notebooks...</div>
+        <div id="portfolio-grid" class="grid"></div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

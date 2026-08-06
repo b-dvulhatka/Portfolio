@@ -1,0 +1,44 @@
+name: Atualizar Dados do Portfólio
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Executa diariamente à meia-noite (UTC)
+  workflow_dispatch:    # Permite rodar manualmente clicando num botão no GitHub
+  push:
+    branches:
+      - main            # Executa ao fazer push na branch principal
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write # Necessário para o bot fazer o commit do JSON
+      
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar o Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Instalar bibliotecas
+        run: pip install requests kaggle
+
+      - name: Executar script extrator de dados
+        env:
+          # Estas variáveis devem ser cadastradas em: Settings > Secrets and variables > Actions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: python build_data.py
+
+      - name: Fazer commit e push do novo projetos.json
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add projetos.json
+          # Só faz o commit se houver alguma mudança real nos dados
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: atualização automática dos projetos [skip ci]" && git push)
