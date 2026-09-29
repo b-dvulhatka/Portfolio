@@ -1,5 +1,14 @@
 [
   {
+    "id": "gh-1324608612",
+    "titulo": "Portfolio",
+    "descricao": "Projeto em desenvolvimento.",
+    "url": "https://github.com/b-dvulhatka/Portfolio",
+    "origem": "GitHub",
+    "tecnologias": "HTML",
+    "atualizado_em": "2026-09-28T03:25:01Z"
+  },
+  {
     "id": "gh-1390353097",
     "titulo": "Financial Categorizer",
     "descricao": "Projeto em desenvolvimento.",
@@ -7,15 +16,6 @@
     "origem": "GitHub",
     "tecnologias": "Python",
     "atualizado_em": "2026-09-27T07:13:55Z"
-  },
-  {
-    "id": "gh-1324608612",
-    "titulo": "Portfolio",
-    "descricao": "Projeto em desenvolvimento.",
-    "url": "https://github.com/b-dvulhatka/Portfolio",
-    "origem": "GitHub",
-    "tecnologias": "HTML",
-    "atualizado_em": "2026-09-27T03:27:04Z"
   },
   {
     "id": "kg-brunodvulhatka-eda-patient-analysis",
